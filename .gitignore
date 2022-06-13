@@ -3,3 +3,6 @@ Miniconda3-latest-Linux-x86_64.sh
 /CV-Notebooks-Summer-2022
 *.term
 Miniconda3-latest-Linux-x86_64.sh.1
+*.jpg
+/test_set
+/train_set

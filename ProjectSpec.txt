@@ -1,0 +1,45 @@
+Goals:
+    - Weapon detection
+    - Public saftey
+    - Threat recognition
+    - Fewer crime rates    
+    - Notify people around the area
+    - Notify the police/authorities
+    - Detect if person is hostile
+
+Outline:
+    Create a product that analyzes pictures/videos for dangers/threats (Knives/guns/other weapons) in public areas. If we have enough time we can also analyze the person for behavior that may indicate a threat.
+    1st iteration - user uploads images to detect threats, returns image with objects detected and a message about what objects were found (if any)
+    Time Permitting:
+    2nd iteration - video upload with same output as image upload; further extension could be live feed
+
+Roadblocks:
+            - Notifying people in area also reaches perpetrator/threat
+            - Identify correct threatening situations (avoid mis-detection/mis-classification)\
+            - Focus on avoiding missidentifications
+            - Authorization for reporting to authorities
+            - Even if their is a object present, what if its a cops gun?
+
+Tech Stack:
+    - Yolov5 (CV model)
+    - html/css/javascript
+    - Flask (python for web development)
+
+    Data Collection:
+        - Variety within each class
+        - Include images that do not contain threats
+        - 2D vs 3D (for non-threat vs threat)
+        - What about 3D things that are not threats (nerf guns, toy swords, etc.)?
+
+Steps:
+    1. Gathering the data for the AI
+    2. Teaching the AI
+    3. Test the AI and use more data based on inaccuracy
+    4. Troubleshoot problems
+    5. Creating the front-end website
+    6. Intigration of back-end into website
+    7. Peer feedback
+    8. Finalize product
+    9. Deploy
+
+
