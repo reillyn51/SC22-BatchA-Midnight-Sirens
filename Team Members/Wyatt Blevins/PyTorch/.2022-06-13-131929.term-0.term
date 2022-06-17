@@ -1,0 +1,1603 @@
+(base) ]0;~/CV-Notebooks-Summer-2022/Week 2/PyTorch[01;34m~/CV-Notebooks-Summer-2022/Week 2/PyTorch[00m$ cd ..
+(base) ]0;~/CV-Notebooks-Summer-2022/Week 2[01;34m~/CV-Notebooks-Summer-2022/Week 2[00m$ cd
+(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term    [0m[01;34m'Group 1'[0m   Miniconda3-latest-Linux-x86_64.sh     ProjectSpec.txt   asong_anaconda.term   terminal.term
+ [01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh.1  [01;34m'Team Members'[0m     [01;34mminiconda3[0m
+(base) ]0;~[01;34m~[00m$ git [K[K[K[Kgit
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+(base) ]0;~[01;34m~[00m$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+(base) ]0;~[01;34m~[00m$ git status
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+(base) ]0;~[01;34m~[00m$ clear
+[H[J(base) ]0;~[01;34m~[00m$ echo "#[K[K[K[K[K[K[Kls
+ 2022-06-13-093144.term    [0m[01;34m'Group 1'[0m   Miniconda3-latest-Linux-x86_64.sh     ProjectSpec.txt   asong_anaconda.term   terminal.term
+ [01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh.1  [01;34m'Team Members'[0m     [01;34mminiconda3[0m
+(base) ]0;~[01;34m~[00m$ echo "# SC22-BatchA-Midnight-Sirens" >> README.md
+(base) ]0;~[01;34m~[00m$ git init
+Initialized empty Git repository in /projects/9f552ddb-0255-4438-a179-8f8c475cfce3/.git/
+(base) ]0;~[01;34m~[00m$ git add README.md
+(base) ]0;~[01;34m~[00m$ ci[K[Kgit commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '9f552ddb02554438a1798f8c475cfce3@f5177efd576a.(none)')
+(base) ]0;~[01;34m~[00m$ git cong[Kfig --gloab[K[Kbal user.emial[K[K[Kail "reillyn[Kn51@gam[K[Kmai.[Kl.com"
+(base) ]0;~[01;34m~[00m$ git config --global user.email "reillyn51@gmail.com"[C[1P "reillyn51@gmail.com"[1P "reillyn51@gmail.com"[1P "reillyn51@gmail.com"[1P "reillyn51@gmail.com"[1P "reillyn51@gmail.com"[1P "reillyn51@gmail.com". "reillyn51@gmail.com"n "reillyn51@gmail.com"a "reillyn51@gmail.com"m "reillyn51@gmail.com"[Ce "reillyn51@gmail.com"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"N"a"t"h"a"n" "R"e"i"l"l"y"
+(base) ]0;~[01;34m~[00m$ git config --global user.name "Nathan Reilly"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgit config --global user.name "Nathan Reilly"email "reillyn51@gmail.com"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24Pmmit -m "first commit"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Padd README.mdcommit -m "first commit"
+[master (root-commit) 712b817] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+(base) ]0;~[01;34m~[00m$ git bar[K[Kracn[K[Knch -M main
+(base) ]0;~[01;34m~[00m$ git remote add origin https://github.com/reillyn51/SC22-BatchA-Midnight-Sirens.git
+(base) ]0;~[01;34m~[00m$ gi [Kt remote
+origin
+(base) ]0;~[01;34m~[00m$ git reo[Kmote -V
+error: unknown switch `V'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+(base) ]0;~[01;34m~[00m$ git remote -V[Kv
+origin	https://github.com/reillyn51/SC22-BatchA-Midnight-Sirens.git (fetch)
+origin	https://github.com/reillyn51/SC22-BatchA-Midnight-Sirens.git (push)
+(base) ]0;~[01;34m~[00m$ git push -u oig[K[Krigin main
+Username for 'https://github.com': reillyn51
+Password for 'https://reillyn51@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/reillyn51/SC22-BatchA-Midnight-Sirens.git/'
+(base) ]0;~[01;34m~[00m$ git push -u origin main
+Username for 'https://github.com': reillyn51
+Password for 'https://reillyn51@github.com': 
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 248 bytes | 248.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/reillyn51/SC22-BatchA-Midnight-Sirens.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) ]0;~[01;34m~[00m$ clear
+[H[J(base) ]0;~[01;34m~[00m$ echo ""[C [1@ [C[C > > [C g [1P . g i t i g n o r e [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [K[1P [1P [K[1P [K[1P [K[1P [1P [1P [1P l s 
+ 2022-06-13-093144.term    [0m[01;34m'Group 1'[0m   Miniconda3-latest-Linux-x86_64.sh     ProjectSpec.txt  [01;34m'Team Members'[0m         [01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh.1   README.md         asong_anaconda.term   terminal.term
+(base) ]0;~[01;34m~[00m$ echo "" "[1P"Miniconda3-latest-Linux-x86_64.sh"[C >> .gitg[Kignore 
+(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term    [0m[01;34m'Group 1'[0m   Miniconda3-latest-Linux-x86_64.sh     ProjectSpec.txt  [01;34m'Team Members'[0m         [01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh.1   README.md         asong_anaconda.term   terminal.term
+(base) ]0;~[01;34m~[00m$ git 
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+(base) ]0;~[01;34m~[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.2022-06-02-091527.term-0.term[m
+	[31m.2022-06-02-092624.term-0.term[m
+	[31m.2022-06-02-093641.term-0.term[m
+	[31m.2022-06-13-093144.term-0.term[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Amiriyah-Term.term-0.term[m
+	[31m.Gur_terminal.term-0.term[m
+	[31m.Xauthority[m
+	[31m.asong_anaconda.term-0.term[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.gitignore[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.teminal.term-0.term[m
+	[31m.terminal.term-0.term[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31m2022-06-13-093144.term[m
+	[31mCV-Notebooks-Summer-2022/[m
+	[31mGroup 1/[m
+	[31mGroup 2/[m
+	[31mMiniconda3-latest-Linux-x86_64.sh.1[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/[m
+	[31masong_anaconda.term[m
+	[31mminiconda3/[m
+	[31mterminal.term[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) ]0;~[01;34m~[00m$ git add .gitignore
+(base) ]0;~[01;34m~[00m$ git st[K[Kstatus
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   .gitignore[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.2022-06-02-091527.term-0.term[m
+	[31m.2022-06-02-092624.term-0.term[m
+	[31m.2022-06-02-093641.term-0.term[m
+	[31m.2022-06-13-093144.term-0.term[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Amiriyah-Term.term-0.term[m
+	[31m.Gur_terminal.term-0.term[m
+	[31m.Xauthority[m
+	[31m.asong_anaconda.term-0.term[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.teminal.term-0.term[m
+	[31m.terminal.term-0.term[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31m2022-06-13-093144.term[m
+	[31mCV-Notebooks-Summer-2022/[m
+	[31mGroup 1/[m
+	[31mGroup 2/[m
+	[31mMiniconda3-latest-Linux-x86_64.sh.1[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/[m
+	[31masong_anaconda.term[m
+	[31mminiconda3/[m
+	[31mterminal.term[m
+
+(base) ]0;~[01;34m~[00m$ clear
+[H[J(base) ]0;~[01;34m~[00m$ ech[K[K[Kls
+ 2022-06-13-093144.term    [0m[01;34m'Group 1'[0m   Miniconda3-latest-Linux-x86_64.sh     ProjectSpec.txt  [01;34m'Team Members'[0m         [01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh.1   README.md         asong_anaconda.term   terminal.term
+(base) ]0;~[01;34m~[00m$ git add [K[K[K[K[K[K[K[Kecho ""[C >> .gitignore[1@/[1@m[1@i[1@n[1P[1P[1P[10@miniconda3
+(base) ]0;~[01;34m~[00m$ cat git[K[K[K.gitignore
+Miniconda3-latest-Linux-x86_64.sh
+/miniconda3
+(base) ]0;~[01;34m~[00m$ cat .gitignore[C[C[C[C[C[C[C[C[C[C[18@echo "/miniconda3" >>[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@C[1@V[1@-[1@N[1@i[1@t[1@e[1P[1P[1P[1P[1P[1P[1P[24@CV-Notebooks-Summer-2022
+(base) ]0;~[01;34m~[00m$ echo "/CV-Notebooks-Summer-2022" >> .gitignore[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@*[1@.[1@t[1@e[1@r[1@m
+(base) ]0;~[01;34m~[00m$ echo "*.term" >> .gitignore[C[1P[1P[1P[1P[1P[1P[35@Miniconda3-latest-Linux-x86_64.sh.1
+(base) ]0;~[01;34m~[00m$ cat .gitignore
+Miniconda3-latest-Linux-x86_64.sh
+/miniconda3
+/CV-Notebooks-Summer-2022
+*.term
+Miniconda3-latest-Linux-x86_64.sh.1
+(base) ]0;~[01;34m~[00m$ git c[Kadd git[K[K[K.gitignore
+(base) ]0;~[01;34m~[00m$ git ocmmit [K[K[K[K[K[Kc[K[Kcommit .[K[K
+hint: Waiting for your editor to close the file... [?1049h[?1h=[1;47r[23m[24m[0m[H[J[?25l[47;1H"~/.git/COMMIT_EDITMSG" 40L, 684C[2;1H[34m# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch [0m[35mmain[0m
+[34m# Your branch is up to date with '[0m[35morigin/main[0m[34m'.
+#
+# [0m[35mChanges to be committed:[0m
+[34m#       [0m[32mnew file[0m[34m: [0m[31m  .gitignore[0m
+[34m#
+# [0m[35mUntracked files:[0m
+[34m#       [0m[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[0m
+[34m#       [0m[31m.:902313665-fakexinerama[0m
+[34m#       [0m[31m.Xauthority[0m
+[34m#       [0m[31m.bash_history[0m
+[34m#       [0m[31m.bash_profile[0m
+[34m#       [0m[31m.bashrc[0m
+[34m#       [0m[31m.cache/[0m
+[34m#       [0m[31m.conda/[0m
+[34m#       [0m[31m.config/[0m
+[34m#       [0m[31m.dbus/[0m
+[34m#       [0m[31m.fakexinerama[0m
+[34m#       [0m[31m.gitconfig[0m
+[34m#       [0m[31m.ipython/[0m
+[34m#       [0m[31m.jupyter-blobs-v0.db[0m
+[34m#       [0m[31m.jupyter/[0m
+[34m#       [0m[31m.local/[0m
+[34m#       [0m[31m.npm/[0m
+[34m#       [0m[31m.octave_hist[0m
+[34m#       [0m[31m.smc/[0m
+[34m#       [0m[31m.tcshrc[0m
+[34m#       [0m[31m.viminfo[0m
+[34m#       [0m[31m.xonshrc[0m
+[34m#       [0m[31m.xsession-errors[0m
+[34m#       [0m[31m.zshrc[0m
+[34m#       [0m[31mGroup 1/[0m
+[34m#       [0m[31mGroup 2/[0m
+[34m#       [0m[31mProjectSpec.txt[0m
+[34m#       [0m[31mTeam Members/[0m
+[34m#[0m
+[1m[34m~                                                                                                                                    [42;1H~                                                                                                                                    [43;1H~                                                                                                                                    [44;1H~                                                                                                                                    [45;1H~                                                                                                                                    [46;1H~                                                                                                                                    [0m[47;116H1,0-1[9CAll[1;1H[34h[?25h[?25l[47;106H~@k[1;1H[47;106H   [1;1H[34h[?25h[?25l[47;116H2,1  [2;1H[34h[?25h[?25l[47;116H3[3;1H[34h[?25h[?25l[47;106H~@k[3;1H[47;106H   [4;1H[47;116H4[4;1H[34h[?25h[?25l[47;116H5[5;1H[34h[?25h[?25l[47;106H~@k[5;1H[47;106H   [6;1H[47;116H6[6;1H[34h[?25h[?25l[47;116H7[7;1H[34h[?25h[?25l[47;106H~@k[7;1H[47;106H   [8;1H[47;116H8[8;1H[34h[?25h[?25l[47;116H9[9;1H[34h[?25h[?25l[47;106H~@k[9;1H[47;106H   [10;1H[47;116H10,1[10;1H[34h[?25h[?25l[47;117H1[11;1H[34h[?25h[?25l[47;106H~@k[11;1H[47;106H   [12;1H[47;117H2[12;1H[34h[?25h[?25l[47;106H~@k[12;1H[47;106H   [13;1H[47;117H3[13;1H[34h[?25h[?25l[47;106H~@k[13;1H[47;106H   [14;1H[47;117H4[14;1H[34h[?25h[?25l[47;1HType  :qa  and press <Enter> to exit Vim[47;116H[K[47;116H14,1[10CAll[14;1H[34h[?25h[?25l[47;116H[K[47;116H14,1[10CAll[14;1H[34h[?25h[?25l[47;106H^M[14;1H[47;106H  [15;1H[47;117H5[15;1H[34h[?25h[?25l[47;106H^M[15;1H[47;106H  [16;1H[47;117H6[16;1H[34h[?25h[?25l[47;106H^M[16;1H[47;106H  [17;1H[47;117H7[17;1H[34h[?25h[?25l[47;106H^M[17;1H[47;106H  [18;1H[47;117H8[18;1H[34h[?25h[?25l[47;106H:[18;1H[47;1H[K[47;1H:[34h[?25hqa[?25l[47;1H[K[47;1H[?1l>[34h[?25h[?1049l[KAborting commit due to empty commit message.
+(base) ]0;~[01;34m~[00m$ git commit -m "added .gitignore"
+[main 7e403a6] added .gitignore
+ 1 file changed, 5 insertions(+)
+ create mode 100644 .gitignore
+(base) ]0;~[01;34m~[00m$ git push origin main 
+Username for 'https://github.com': ^C
+(base) ]0;~[01;34m~[00m$ ^C
+(base) ]0;~[01;34m~[00m$ ^C
+(base) ]0;~[01;34m~[00m$ clear
+[H[J(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term    [0m[01;34m'Group 1'[0m   Miniconda3-latest-Linux-x86_64.sh     ProjectSpec.txt  [01;34m'Team Members'[0m         [01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh.1   README.md         asong_anaconda.term   terminal.term
+(base) ]0;~[01;34m~[00m$ git commit [K[K[K[K[K[K[K[K[Kt add Group\ [K[K[K[K[K[K[K'Group [K 1' 
+(base) ]0;~[01;34m~[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   Group 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Mastermind.ipynb[m
+	[32mnew file:   Group 1/Week 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/Mastermind.ipynb[m
+	[32mnew file:   Group 1/Week 1/face_detect/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/face_detect/face_recognition_revised.ipynb[m
+	[32mnew file:   Group 1/Week 1/face_detect/haarcascade_frontalface_default.xml[m
+	[32mnew file:   Group 1/Week 1/face_detect/lebron-james.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/rihanna.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/scientists.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/selfie.jpg[m
+	[32mnew file:   Group 1/Week 1/intro_to_python.ipynb[m
+	[32mnew file:   Group 1/Week 2/.2022-06-13-202033.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 2/2022-06-13-202033.ipynb[m
+	[32mnew file:   Group 1/Week 2/Data_Augmentation_with_PyTorch.ipynb[m
+	[32mnew file:   Group 1/Week 2/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb[m
+	[32mnew file:   Group 1/Week 2/PyTorch/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Group 1/Week 2/Tensorflow/CV_TF_CNN_MNIST.ipynb[m
+	[32mnew file:   Group 1/Week 2/Tensorflow/CV_TF_Perceptron_MNIST.ipynb[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mGroup 2/[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/[m
+
+(base) ]0;~[01;34m~[00m$ clear
+[H[J(base) ]0;~[01;34m~[00m$ cleargit statusadd 'Group 1' [1P[1@2
+(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term    [0m[01;34m'Group 1'[0m   Miniconda3-latest-Linux-x86_64.sh     ProjectSpec.txt  [01;34m'Team Members'[0m         [01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh.1   README.md         asong_anaconda.term   terminal.term
+(base) ]0;~[01;34m~[00m$ git add 'Team Members'/
+warning: adding embedded git repository: Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022
+[33mhint: You've added another git repository inside your current repository.[m
+[33mhint: Clones of the outer repository will not contain the contents of[m
+[33mhint: the embedded repository and will not know how to obtain it.[m
+[33mhint: If you meant to add a submodule, use:[m
+[33mhint: [m
+[33mhint: 	git submodule add <url> Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[m
+[33mhint: [m
+[33mhint: If you added this path by mistake, you can remove it from the[m
+[33mhint: index with:[m
+[33mhint: [m
+[33mhint: 	git rm --cached Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[m
+[33mhint: [m
+[33mhint: See "git help submodule" for more information.[m
+warning: adding embedded git repository: Team Members/Gur Machol/CV-Notebooks-Summer-2022
+(base) ]0;~[01;34m~[00m$ git rem[K[Km =[K--c[K[K[K[K[K[K[K[K[K[Kgit rm --cached Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022
+fatal: pathspec 'Team' did not match any files
+(base) ]0;~[01;34m~[00m$ git rm --cached Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[C[1@'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'
+error: the following file has staged content different from both the
+file and the HEAD:
+    Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022
+(use -f to force removal)
+(base) ]0;~[01;34m~[00m$ git rm --cached 'Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022'[1P[1@ [1@0[1@f[1@ [1P[1P[1P[1@-[1@f[1@ 
+rm 'Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022'
+(base) ]0;~[01;34m~[00m$ g[Kls
+ 2022-06-13-093144.term    [0m[01;34m'Group 1'[0m   Miniconda3-latest-Linux-x86_64.sh     ProjectSpec.txt  [01;34m'Team Members'[0m         [01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh.1   README.md         asong_anaconda.term   terminal.term
+(base) ]0;~[01;34m~[00m$ cd TE[Keam\ Members/
+(base) ]0;~/Team Members[01;34m~/Team Members[00m$ ls
+[0m[01;34m'Amiriyah Atwood'[0m  [01;34m'Asong Suh Jr'[0m  [01;34m'Diego Calderon'[0m  [01;34m'Gur Machol'[0m  [01;34m'Sushim Chakrabortty'[0m  [01;34m'Wyatt Blevins'[0m
+(base) ]0;~/Team Members[01;34m~/Team Members[00m$ cd Ago[K[Ksong\ Suh\ Jr/
+(base) ]0;~/Team Members/Asong Suh Jr[01;34m~/Team Members/Asong Suh Jr[00m$ ls
+[0m[01;34mCV-Notebooks-Summer-2022[0m             PyTorch_Digits_Classifier_revised.ipynb  intro_to_python.ipynb
+Miniconda3-latest-Linux-x86_64.sh    asuhterminal.term                        [01;34mtest_set[0m
+Miniconda3-latest-Linux-x86_64.sh.1  face_recognition_revised.ipynb           [01;34mtrain_set[0m
+(base) ]0;~/Team Members/Asong Suh Jr[01;34m~/Team Members/Asong Suh Jr[00m$ cd 
+(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term    [0m[01;34m'Group 1'[0m   Miniconda3-latest-Linux-x86_64.sh     ProjectSpec.txt  [01;34m'Team Members'[0m         [01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh.1   README.md         asong_anaconda.term   terminal.term
+(base) ]0;~[01;34m~[00m$ clear
+[H[J(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term    [0m[01;34m'Group 1'[0m   Miniconda3-latest-Linux-x86_64.sh     ProjectSpec.txt  [01;34m'Team Members'[0m         [01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh.1   README.md         asong_anaconda.term   terminal.term
+(base) ]0;~[01;34m~[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   Group 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Mastermind.ipynb[m
+	[32mnew file:   Group 1/Week 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/Mastermind.ipynb[m
+	[32mnew file:   Group 1/Week 1/face_detect/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/face_detect/face_recognition_revised.ipynb[m
+	[32mnew file:   Group 1/Week 1/face_detect/haarcascade_frontalface_default.xml[m
+	[32mnew file:   Group 1/Week 1/face_detect/lebron-james.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/rihanna.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/scientists.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/selfie.jpg[m
+	[32mnew file:   Group 1/Week 1/intro_to_python.ipynb[m
+	[32mnew file:   Group 1/Week 2/.2022-06-13-202033.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 2/2022-06-13-202033.ipynb[m
+	[32mnew file:   Group 1/Week 2/Data_Augmentation_with_PyTorch.ipynb[m
+	[32mnew file:   Group 1/Week 2/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb[m
+	[32mnew file:   Group 1/Week 2/PyTorch/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Group 1/Week 2/Tensorflow/CV_TF_CNN_MNIST.ipynb[m
+	[32mnew file:   Group 1/Week 2/Tensorflow/CV_TF_Perceptron_MNIST.ipynb[m
+	[32mnew file:   Group 2/Week 1/.Mastermind.ipynb.sage-chat[m
+	[32mnew file:   Group 2/Week 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 2/Week 1/Mastermind.ipynb[m
+	[32mnew file:   Group 2/Week 1/face_detect/face_recognition_revised.ipynb[m
+	[32mnew file:   Group 2/Week 1/face_detect/haarcascade_frontalface_default.xml[m
+	[32mnew file:   Group 2/Week 1/face_detect/lebron-james.jpg[m
+	[32mnew file:   Group 2/Week 1/face_detect/rihanna.jpg[m
+	[32mnew file:   Group 2/Week 1/face_detect/scientists.jpg[m
+	[32mnew file:   Group 2/Week 1/face_detect/selfie.jpg[m
+	[32mnew file:   Group 2/Week 1/intro_to_python.ipynb[m
+	[32mnew file:   Group 2/Week 2/Data_Augmentation_with_PyTorch.ipynb[m
+	[32mnew file:   Group 2/Week 2/PyTorch/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 2/Week 2/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb[m
+	[32mnew file:   Group 2/Week 2/PyTorch/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Group 2/Week 2/Tensorflow/CV_TF_CNN_MNIST.ipynb[m
+	[32mnew file:   Group 2/Week 2/Tensorflow/CV_TF_Perceptron_MNIST.ipynb[m
+	[32mnew file:   Team Members/Amiriyah Atwood/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Amiriyah Atwood/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Amiriyah Atwood/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Amiriyah Atwood/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Team Members/Amiriyah Atwood/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Amiriyah Atwood/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Asong Suh Jr/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Asong Suh Jr/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Asong Suh Jr/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Team Members/Asong Suh Jr/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Asong Suh Jr/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/.My Mastermind Attempt.ipynb.sage-chat[m
+	[32mnew file:   Team Members/Diego Calderon/.My Mastermind Attempt.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Diego Calderon/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Diego Calderon/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Diego Calderon/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Diego Calderon/My Mastermind Attempt.ipynb[m
+	[32mnew file:   Team Members/Diego Calderon/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Team Members/Diego Calderon/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Diego Calderon/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Gur Machol/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m
+	[32mnew file:   Team Members/Gur Machol/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/~export[m
+	[32mnew file:   Team Members/Sushim Chakrabortty/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Sushim Chakrabortty/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Wyatt Blevins/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/face_detection.ipynb[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/haarcascade_frontalface_default.xml[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/lebron-james.jpg[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/rihanna.jpg[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/scientists.jpg[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/selfie.jpg[m
+	[32mnew file:   Team Members/Wyatt Blevins/intro_to_python.ipynb[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	[31mmodified:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/Asong Suh Jr/CV-Notebooks-Summer-2022/[m
+
+(base) ]0;~[01;34m~[00m$ 
+(base) ]0;~[01;34m~[00m$ git statusls[Kclear[3Plscd [1Plscd Asong\ Suh\ Jr/[C[C[C[C[C[C[C[C[C[Cls[Kcd Team\ Members/[C[C[C[C[C[C[C[C[C[Cls[Kgit rm --cached -f 'Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2PTeam Members/Asong Suh Jr/CV-Notebooks-Summer-2022[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd 'Team Members'/[K[C[C[C[C[C[C[C[C[C[Cls[Kgit add 'Group 2' [C[C[C[C[C[C[C[C[C[Cclear[Kgit statusadd 'Group 1' [C[C[C[C[C[C[C[C[C[Cls[Kcleargit push origin main [C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "added .gitignore"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kadd .gitignore[C[C[C[C[C[C[C[C[C[C[4Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[42@echo "Miniconda3-latest-Linux-x86_64.sh.1" >>[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29P*.term[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29@Miniconda3-latest-Linux-x86_64.sh.1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@*[1@.[1@j[1@p[1@g
+(base) ]0;~[01;34m~[00m$ echo "*.jpg" >> .gitignore[C[C[C[1P[1P[1P[1P[1P[1@*[1@*[1@u[1@b[1@y[1@t[1@e[1P[1P[1P[1P[1P[1P[1P[1@/[1@t[1@e[1@s[1@t[1@_[1@s[1@e[1@t
+(base) ]0;~[01;34m~[00m$ echo "/test_set" >> .gitignore[C[1P[1P[1P[1@r[1@a[1@i[1@n
+(base) ]0;~[01;34m~[00m$ git add TE[K[K'terminal.term' [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit [K[K[K[Kgit rm 'TE[Keam Members'/
+fatal: not removing 'Team Members/' recursively without -r
+(base) ]0;~[01;34m~[00m$ git rm 'Team Members'/[C[C[1@-[1@r[1@ 
+fatal: could not lookup name for submodule 'Team Members/Gur Machol/CV-Notebooks-Summer-2022'
+(base) ]0;~[01;34m~[00m$ git rm -r 'Team Members'/[K
+fatal: could not lookup name for submodule 'Team Members/Gur Machol/CV-Notebooks-Summer-2022'
+(base) ]0;~[01;34m~[00m$ git rm -r 'Team Members'[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[C[K[K[K[K[K[K[K[K[K[K[Kgit [K[K[K[Kgit status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   Group 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Mastermind.ipynb[m
+	[32mnew file:   Group 1/Week 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/Mastermind.ipynb[m
+	[32mnew file:   Group 1/Week 1/face_detect/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/face_detect/face_recognition_revised.ipynb[m
+	[32mnew file:   Group 1/Week 1/face_detect/haarcascade_frontalface_default.xml[m
+	[32mnew file:   Group 1/Week 1/face_detect/lebron-james.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/rihanna.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/scientists.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/selfie.jpg[m
+	[32mnew file:   Group 1/Week 1/intro_to_python.ipynb[m
+	[32mnew file:   Group 1/Week 2/.2022-06-13-202033.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 2/2022-06-13-202033.ipynb[m
+	[32mnew file:   Group 1/Week 2/Data_Augmentation_with_PyTorch.ipynb[m
+	[32mnew file:   Group 1/Week 2/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb[m
+	[32mnew file:   Group 1/Week 2/PyTorch/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Group 1/Week 2/Tensorflow/CV_TF_CNN_MNIST.ipynb[m
+	[32mnew file:   Group 1/Week 2/Tensorflow/CV_TF_Perceptron_MNIST.ipynb[m
+	[32mnew file:   Group 2/Week 1/.Mastermind.ipynb.sage-chat[m
+	[32mnew file:   Group 2/Week 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 2/Week 1/Mastermind.ipynb[m
+	[32mnew file:   Group 2/Week 1/face_detect/face_recognition_revised.ipynb[m
+	[32mnew file:   Group 2/Week 1/face_detect/haarcascade_frontalface_default.xml[m
+	[32mnew file:   Group 2/Week 1/face_detect/lebron-james.jpg[m
+	[32mnew file:   Group 2/Week 1/face_detect/rihanna.jpg[m
+	[32mnew file:   Group 2/Week 1/face_detect/scientists.jpg[m
+	[32mnew file:   Group 2/Week 1/face_detect/selfie.jpg[m
+	[32mnew file:   Group 2/Week 1/intro_to_python.ipynb[m
+	[32mnew file:   Group 2/Week 2/Data_Augmentation_with_PyTorch.ipynb[m
+	[32mnew file:   Group 2/Week 2/PyTorch/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 2/Week 2/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb[m
+	[32mnew file:   Group 2/Week 2/PyTorch/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Group 2/Week 2/Tensorflow/CV_TF_CNN_MNIST.ipynb[m
+	[32mnew file:   Group 2/Week 2/Tensorflow/CV_TF_Perceptron_MNIST.ipynb[m
+	[32mnew file:   Team Members/Amiriyah Atwood/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Amiriyah Atwood/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Amiriyah Atwood/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Amiriyah Atwood/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Team Members/Amiriyah Atwood/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Amiriyah Atwood/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Asong Suh Jr/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Asong Suh Jr/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Asong Suh Jr/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Team Members/Asong Suh Jr/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Asong Suh Jr/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/test_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Asong Suh Jr/train_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/.My Mastermind Attempt.ipynb.sage-chat[m
+	[32mnew file:   Team Members/Diego Calderon/.My Mastermind Attempt.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Diego Calderon/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Diego Calderon/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Diego Calderon/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Diego Calderon/My Mastermind Attempt.ipynb[m
+	[32mnew file:   Team Members/Diego Calderon/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Team Members/Diego Calderon/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Diego Calderon/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/test_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Diego Calderon/train_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Gur Machol/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m
+	[32mnew file:   Team Members/Gur Machol/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/~export[m
+	[32mnew file:   Team Members/Sushim Chakrabortty/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Sushim Chakrabortty/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Wyatt Blevins/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-images-idx3-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-images-idx3-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-labels-idx1-ubyte[m
+	[32mnew file:   Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-labels-idx1-ubyte.gz[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/face_detection.ipynb[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/haarcascade_frontalface_default.xml[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/lebron-james.jpg[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/rihanna.jpg[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/scientists.jpg[m
+	[32mnew file:   Team Members/Wyatt Blevins/face_detect/selfie.jpg[m
+	[32mnew file:   Team Members/Wyatt Blevins/intro_to_python.ipynb[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	[31mmodified:   .gitignore[m
+	[31mmodified:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/Asong Suh Jr/CV-Notebooks-Summer-2022/[m
+
+(base) ]0;~[01;34m~[00m$ git statusrm -r 'Team Members'/'A's'ong Suh Jr'/
+error: the following files have changes staged in the index:
+    Team Members/Asong Suh Jr/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2
+    Team Members/Asong Suh Jr/.face_recognition_revised.ipynb.sage-jupyter2
+    Team Members/Asong Suh Jr/.intro_to_python.ipynb.sage-jupyter2
+    Team Members/Asong Suh Jr/PyTorch_Digits_Classifier_revised.ipynb
+    Team Members/Asong Suh Jr/face_recognition_revised.ipynb
+    Team Members/Asong Suh Jr/intro_to_python.ipynb
+    Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-images-idx3-ubyte
+    Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz
+    Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-labels-idx1-ubyte
+    Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-labels-idx1-ubyte.gz
+    Team Members/Asong Suh Jr/test_set/MNIST/raw/train-images-idx3-ubyte
+    Team Members/Asong Suh Jr/test_set/MNIST/raw/train-images-idx3-ubyte.gz
+    Team Members/Asong Suh Jr/test_set/MNIST/raw/train-labels-idx1-ubyte
+    Team Members/Asong Suh Jr/test_set/MNIST/raw/train-labels-idx1-ubyte.gz
+    Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-images-idx3-ubyte
+    Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz
+    Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-labels-idx1-ubyte
+    Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz
+    Team Members/Asong Suh Jr/train_set/MNIST/raw/train-images-idx3-ubyte
+    Team Members/Asong Suh Jr/train_set/MNIST/raw/train-images-idx3-ubyte.gz
+    Team Members/Asong Suh Jr/train_set/MNIST/raw/train-labels-idx1-ubyte
+    Team Members/Asong Suh Jr/train_set/MNIST/raw/train-labels-idx1-ubyte.gz
+(use --cached to keep the file, or -f to force removal)
+(base) ]0;~[01;34m~[00m$ git rm -r 'Team Members/Asong Suh Jr'/[C[1@-[1@f[1@ 
+rm 'Team Members/Asong Suh Jr/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2'
+rm 'Team Members/Asong Suh Jr/.face_recognition_revised.ipynb.sage-jupyter2'
+rm 'Team Members/Asong Suh Jr/.intro_to_python.ipynb.sage-jupyter2'
+rm 'Team Members/Asong Suh Jr/PyTorch_Digits_Classifier_revised.ipynb'
+rm 'Team Members/Asong Suh Jr/face_recognition_revised.ipynb'
+rm 'Team Members/Asong Suh Jr/intro_to_python.ipynb'
+rm 'Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-images-idx3-ubyte'
+rm 'Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz'
+rm 'Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-labels-idx1-ubyte'
+rm 'Team Members/Asong Suh Jr/test_set/MNIST/raw/t10k-labels-idx1-ubyte.gz'
+rm 'Team Members/Asong Suh Jr/test_set/MNIST/raw/train-images-idx3-ubyte'
+rm 'Team Members/Asong Suh Jr/test_set/MNIST/raw/train-images-idx3-ubyte.gz'
+rm 'Team Members/Asong Suh Jr/test_set/MNIST/raw/train-labels-idx1-ubyte'
+rm 'Team Members/Asong Suh Jr/test_set/MNIST/raw/train-labels-idx1-ubyte.gz'
+rm 'Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-images-idx3-ubyte'
+rm 'Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz'
+rm 'Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-labels-idx1-ubyte'
+rm 'Team Members/Asong Suh Jr/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz'
+rm 'Team Members/Asong Suh Jr/train_set/MNIST/raw/train-images-idx3-ubyte'
+rm 'Team Members/Asong Suh Jr/train_set/MNIST/raw/train-images-idx3-ubyte.gz'
+rm 'Team Members/Asong Suh Jr/train_set/MNIST/raw/train-labels-idx1-ubyte'
+rm 'Team Members/Asong Suh Jr/train_set/MNIST/raw/train-labels-idx1-ubyte.gz'
+(base) ]0;~[01;34m~[00m$ git rm -r -f 'Team Members/Asong Suh Jr'/[C[C[C[C[C[C[C[C[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/W'/y'/att Blevins'/
+rm 'Team Members/Wyatt Blevins/.intro_to_python.ipynb.sage-jupyter2'
+rm 'Team Members/Wyatt Blevins/PyTorch/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2'
+rm 'Team Members/Wyatt Blevins/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb'
+rm 'Team Members/Wyatt Blevins/PyTorch/PyTorch_Digits_Classifier_revised.ipynb'
+rm 'Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/t10k-images-idx3-ubyte'
+rm 'Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz'
+rm 'Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/t10k-labels-idx1-ubyte'
+rm 'Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-images-idx3-ubyte'
+rm 'Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-images-idx3-ubyte.gz'
+rm 'Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-labels-idx1-ubyte'
+rm 'Team Members/Wyatt Blevins/PyTorch/test_set/MNIST/raw/train-labels-idx1-ubyte.gz'
+rm 'Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-images-idx3-ubyte'
+rm 'Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz'
+rm 'Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-labels-idx1-ubyte'
+rm 'Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz'
+rm 'Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-images-idx3-ubyte'
+rm 'Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-images-idx3-ubyte.gz'
+rm 'Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-labels-idx1-ubyte'
+rm 'Team Members/Wyatt Blevins/PyTorch/train_set/MNIST/raw/train-labels-idx1-ubyte.gz'
+rm 'Team Members/Wyatt Blevins/face_detect/.face_recognition_revised.ipynb.sage-jupyter2'
+rm 'Team Members/Wyatt Blevins/face_detect/face_detection.ipynb'
+rm 'Team Members/Wyatt Blevins/face_detect/face_recognition_revised.ipynb'
+rm 'Team Members/Wyatt Blevins/face_detect/haarcascade_frontalface_default.xml'
+rm 'Team Members/Wyatt Blevins/face_detect/lebron-james.jpg'
+rm 'Team Members/Wyatt Blevins/face_detect/rihanna.jpg'
+rm 'Team Members/Wyatt Blevins/face_detect/scientists.jpg'
+rm 'Team Members/Wyatt Blevins/face_detect/selfie.jpg'
+rm 'Team Members/Wyatt Blevins/intro_to_python.ipynb'
+(base) ]0;~[01;34m~[00m$ git rm -r -f 'Team Members/Wyatt Blevins'/[C[C[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/G'/u'/r'/
+fatal: pathspec 'Team Members/Gur/' did not match any files
+(base) ]0;~[01;34m~[00m$ git rm -r -f 'Team Members/Gur'/ '/M'/a'/chol'/
+fatal: could not lookup name for submodule 'Team Members/Gur Machol/CV-Notebooks-Summer-2022'
+(base) ]0;~[01;34m~[00m$ git rm -r -f 'Team Members/Gur Machol'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'//'/A'/m'/iriyah Atwood'/
+rm 'Team Members/Amiriyah Atwood/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2'
+rm 'Team Members/Amiriyah Atwood/.face_recognition_revised.ipynb.sage-jupyter2'
+rm 'Team Members/Amiriyah Atwood/.intro_to_python.ipynb.sage-jupyter2'
+rm 'Team Members/Amiriyah Atwood/PyTorch_Digits_Classifier_revised.ipynb'
+rm 'Team Members/Amiriyah Atwood/face_recognition_revised.ipynb'
+rm 'Team Members/Amiriyah Atwood/intro_to_python.ipynb'
+rm 'Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-images-idx3-ubyte'
+rm 'Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz'
+rm 'Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-labels-idx1-ubyte'
+rm 'Team Members/Amiriyah Atwood/test_set/MNIST/raw/t10k-labels-idx1-ubyte.gz'
+rm 'Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-images-idx3-ubyte'
+rm 'Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-images-idx3-ubyte.gz'
+rm 'Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-labels-idx1-ubyte'
+rm 'Team Members/Amiriyah Atwood/test_set/MNIST/raw/train-labels-idx1-ubyte.gz'
+rm 'Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-images-idx3-ubyte'
+rm 'Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz'
+rm 'Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-labels-idx1-ubyte'
+rm 'Team Members/Amiriyah Atwood/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz'
+rm 'Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-images-idx3-ubyte'
+rm 'Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-images-idx3-ubyte.gz'
+rm 'Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-labels-idx1-ubyte'
+rm 'Team Members/Amiriyah Atwood/train_set/MNIST/raw/train-labels-idx1-ubyte.gz'
+(base) ]0;~[01;34m~[00m$ git rm -r -f 'Team Members/Amiriyah Atwood'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/D'/iego Calderon'/
+rm 'Team Members/Diego Calderon/.My Mastermind Attempt.ipynb.sage-chat'
+rm 'Team Members/Diego Calderon/.My Mastermind Attempt.ipynb.sage-jupyter2'
+rm 'Team Members/Diego Calderon/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2'
+rm 'Team Members/Diego Calderon/.face_recognition_revised.ipynb.sage-jupyter2'
+rm 'Team Members/Diego Calderon/.intro_to_python.ipynb.sage-jupyter2'
+rm 'Team Members/Diego Calderon/My Mastermind Attempt.ipynb'
+rm 'Team Members/Diego Calderon/PyTorch_Digits_Classifier_revised.ipynb'
+rm 'Team Members/Diego Calderon/face_recognition_revised.ipynb'
+rm 'Team Members/Diego Calderon/intro_to_python.ipynb'
+rm 'Team Members/Diego Calderon/test_set/MNIST/raw/t10k-images-idx3-ubyte'
+rm 'Team Members/Diego Calderon/test_set/MNIST/raw/t10k-images-idx3-ubyte.gz'
+rm 'Team Members/Diego Calderon/test_set/MNIST/raw/t10k-labels-idx1-ubyte'
+rm 'Team Members/Diego Calderon/test_set/MNIST/raw/t10k-labels-idx1-ubyte.gz'
+rm 'Team Members/Diego Calderon/test_set/MNIST/raw/train-images-idx3-ubyte'
+rm 'Team Members/Diego Calderon/test_set/MNIST/raw/train-images-idx3-ubyte.gz'
+rm 'Team Members/Diego Calderon/test_set/MNIST/raw/train-labels-idx1-ubyte'
+rm 'Team Members/Diego Calderon/test_set/MNIST/raw/train-labels-idx1-ubyte.gz'
+rm 'Team Members/Diego Calderon/train_set/MNIST/raw/t10k-images-idx3-ubyte'
+rm 'Team Members/Diego Calderon/train_set/MNIST/raw/t10k-images-idx3-ubyte.gz'
+rm 'Team Members/Diego Calderon/train_set/MNIST/raw/t10k-labels-idx1-ubyte'
+rm 'Team Members/Diego Calderon/train_set/MNIST/raw/t10k-labels-idx1-ubyte.gz'
+rm 'Team Members/Diego Calderon/train_set/MNIST/raw/train-images-idx3-ubyte'
+rm 'Team Members/Diego Calderon/train_set/MNIST/raw/train-images-idx3-ubyte.gz'
+rm 'Team Members/Diego Calderon/train_set/MNIST/raw/train-labels-idx1-ubyte'
+rm 'Team Members/Diego Calderon/train_set/MNIST/raw/train-labels-idx1-ubyte.gz'
+(base) ]0;~[01;34m~[00m$ git rm -r -f 'Team Members/Diego Calderon'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/S'/u'/s'/him Chakrabortty'/
+rm 'Team Members/Sushim Chakrabortty/.intro_to_python.ipynb.sage-jupyter2'
+rm 'Team Members/Sushim Chakrabortty/intro_to_python.ipynb'
+(base) ]0;~[01;34m~[00m$ ls[K[Kgit status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   Group 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Mastermind.ipynb[m
+	[32mnew file:   Group 1/Week 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/Mastermind.ipynb[m
+	[32mnew file:   Group 1/Week 1/face_detect/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 1/face_detect/face_recognition_revised.ipynb[m
+	[32mnew file:   Group 1/Week 1/face_detect/haarcascade_frontalface_default.xml[m
+	[32mnew file:   Group 1/Week 1/face_detect/lebron-james.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/rihanna.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/scientists.jpg[m
+	[32mnew file:   Group 1/Week 1/face_detect/selfie.jpg[m
+	[32mnew file:   Group 1/Week 1/intro_to_python.ipynb[m
+	[32mnew file:   Group 1/Week 2/.2022-06-13-202033.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 1/Week 2/2022-06-13-202033.ipynb[m
+	[32mnew file:   Group 1/Week 2/Data_Augmentation_with_PyTorch.ipynb[m
+	[32mnew file:   Group 1/Week 2/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb[m
+	[32mnew file:   Group 1/Week 2/PyTorch/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Group 1/Week 2/Tensorflow/CV_TF_CNN_MNIST.ipynb[m
+	[32mnew file:   Group 1/Week 2/Tensorflow/CV_TF_Perceptron_MNIST.ipynb[m
+	[32mnew file:   Group 2/Week 1/.Mastermind.ipynb.sage-chat[m
+	[32mnew file:   Group 2/Week 1/.Mastermind.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 2/Week 1/Mastermind.ipynb[m
+	[32mnew file:   Group 2/Week 1/face_detect/face_recognition_revised.ipynb[m
+	[32mnew file:   Group 2/Week 1/face_detect/haarcascade_frontalface_default.xml[m
+	[32mnew file:   Group 2/Week 1/face_detect/lebron-james.jpg[m
+	[32mnew file:   Group 2/Week 1/face_detect/rihanna.jpg[m
+	[32mnew file:   Group 2/Week 1/face_detect/scientists.jpg[m
+	[32mnew file:   Group 2/Week 1/face_detect/selfie.jpg[m
+	[32mnew file:   Group 2/Week 1/intro_to_python.ipynb[m
+	[32mnew file:   Group 2/Week 2/Data_Augmentation_with_PyTorch.ipynb[m
+	[32mnew file:   Group 2/Week 2/PyTorch/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Group 2/Week 2/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb[m
+	[32mnew file:   Group 2/Week 2/PyTorch/PyTorch_Digits_Classifier_revised.ipynb[m
+	[32mnew file:   Group 2/Week 2/Tensorflow/CV_TF_CNN_MNIST.ipynb[m
+	[32mnew file:   Group 2/Week 2/Tensorflow/CV_TF_Perceptron_MNIST.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m
+	[32mnew file:   Team Members/Gur Machol/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/~export[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	[31mmodified:   .gitignore[m
+	[31mmodified:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/Asong Suh Jr/[m
+
+(base) ]0;~[01;34m~[00m$ git statusrm -r -f 'Team Members/Sushim Chakrabortty'/[5PDiego Calderon'/Amiriyah Atwood'/[1PDiego Calderon'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/[1P'/G'/r'/oup '/1'/
+rm 'Group 1/.Mastermind.ipynb.sage-jupyter2'
+rm 'Group 1/Mastermind.ipynb'
+rm 'Group 1/Week 1/.Mastermind.ipynb.sage-jupyter2'
+rm 'Group 1/Week 1/.intro_to_python.ipynb.sage-jupyter2'
+rm 'Group 1/Week 1/Mastermind.ipynb'
+rm 'Group 1/Week 1/face_detect/.face_recognition_revised.ipynb.sage-jupyter2'
+rm 'Group 1/Week 1/face_detect/face_recognition_revised.ipynb'
+rm 'Group 1/Week 1/face_detect/haarcascade_frontalface_default.xml'
+rm 'Group 1/Week 1/face_detect/lebron-james.jpg'
+rm 'Group 1/Week 1/face_detect/rihanna.jpg'
+rm 'Group 1/Week 1/face_detect/scientists.jpg'
+rm 'Group 1/Week 1/face_detect/selfie.jpg'
+rm 'Group 1/Week 1/intro_to_python.ipynb'
+rm 'Group 1/Week 2/.2022-06-13-202033.ipynb.sage-jupyter2'
+rm 'Group 1/Week 2/2022-06-13-202033.ipynb'
+rm 'Group 1/Week 2/Data_Augmentation_with_PyTorch.ipynb'
+rm 'Group 1/Week 2/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb'
+rm 'Group 1/Week 2/PyTorch/PyTorch_Digits_Classifier_revised.ipynb'
+rm 'Group 1/Week 2/Tensorflow/CV_TF_CNN_MNIST.ipynb'
+rm 'Group 1/Week 2/Tensorflow/CV_TF_Perceptron_MNIST.ipynb'
+(base) ]0;~[01;34m~[00m$ git rm -r -f 'Group 1'/[1P'/2'/
+rm 'Group 2/Week 1/.Mastermind.ipynb.sage-chat'
+rm 'Group 2/Week 1/.Mastermind.ipynb.sage-jupyter2'
+rm 'Group 2/Week 1/Mastermind.ipynb'
+rm 'Group 2/Week 1/face_detect/face_recognition_revised.ipynb'
+rm 'Group 2/Week 1/face_detect/haarcascade_frontalface_default.xml'
+rm 'Group 2/Week 1/face_detect/lebron-james.jpg'
+rm 'Group 2/Week 1/face_detect/rihanna.jpg'
+rm 'Group 2/Week 1/face_detect/scientists.jpg'
+rm 'Group 2/Week 1/face_detect/selfie.jpg'
+rm 'Group 2/Week 1/intro_to_python.ipynb'
+rm 'Group 2/Week 2/Data_Augmentation_with_PyTorch.ipynb'
+rm 'Group 2/Week 2/PyTorch/.PyTorch_Digits_Classifier_revised.ipynb.sage-jupyter2'
+rm 'Group 2/Week 2/PyTorch/CV_PyTorch_Classification_skeletonized.ipynb'
+rm 'Group 2/Week 2/PyTorch/PyTorch_Digits_Classifier_revised.ipynb'
+rm 'Group 2/Week 2/Tensorflow/CV_TF_CNN_MNIST.ipynb'
+rm 'Group 2/Week 2/Tensorflow/CV_TF_Perceptron_MNIST.ipynb'
+(base) ]0;~[01;34m~[00m$ s[Kgit status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   Team Members/Gur Machol/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m
+	[32mnew file:   Team Members/Gur Machol/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/~export[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	[31mmodified:   .gitignore[m
+	[31mmodified:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/Asong Suh Jr/[m
+
+(base) ]0;~[01;34m~[00m$ git statusrm -r -f 'Group 2'/1'/[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krm -r -f 'Team Members/Sushim Chakrabortty'/[5PDiego Calderon'/Amiriyah Atwood'/[5PGur Machol'/'/[K Machol'/
+fatal: could not lookup name for submodule 'Team Members/Gur Machol/CV-Notebooks-Summer-2022'
+(base) ]0;~[01;34m~[00m$ git rm -r -f 'Team Members/Gur Machol'/[C[C[C[C[C[C[C[C[C[C[Kgit rm -r -f 'Team Members/Gur Machol'/[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K--cahc[K[Kched 'terminal.term' [K[K[K[K[K[K[K[K[K[K[K[K[K[K[KTeam Members'/[C[C[K[K[C/Gr[Kur Machol'/
+fatal: not removing 'Team Members/Gur Machol/' recursively without -r
+(base) ]0;~[01;34m~[00m$ git rm --cached 'Team Members/Gur Machol'/[C[C[C[C[C[C[C[C[C[1@-[1@r[1@ 
+error: the following file has staged content different from both the
+file and the HEAD:
+    Team Members/Gur Machol/CV-Notebooks-Summer-2022
+(use -f to force removal)
+(base) ]0;~[01;34m~[00m$ git rm --cached -r 'Team Members/Gur Machol'/[1@-[1@f[1@ 
+rm 'Team Members/Gur Machol/.face_recognition_revised.ipynb.sage-jupyter2'
+rm 'Team Members/Gur Machol/.intro_to_python.ipynb.sage-jupyter2'
+rm 'Team Members/Gur Machol/CV-Notebooks-Summer-2022'
+rm 'Team Members/Gur Machol/face_recognition_revised.ipynb'
+rm 'Team Members/Gur Machol/intro_to_python.ipynb'
+rm 'Team Members/Gur Machol/~export'
+(base) ]0;~[01;34m~[00m$ git rm --cached -r -f 'Team Members/Gur Machol'/[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pr -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krm -r -f 'Group 2'/[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krm -r -f 'Team Members/Gur Machol'/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@-cached[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@-r [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pr -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[K
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   .gitignore[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ]0;~[01;34m~[00m$ git add .gitignore
+(base) ]0;~[01;34m~[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   .gitignore[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/[m
+
+(base) ]0;~[01;34m~[00m$ cat .gitignore
+Miniconda3-latest-Linux-x86_64.sh
+/miniconda3
+/CV-Notebooks-Summer-2022
+*.term
+Miniconda3-latest-Linux-x86_64.sh.1
+*.jpg
+/test_set
+/train_set
+(base) ]0;~[01;34m~[00m$ cat .gitignore[C[C[C[C[C[C[C[C[C[C[4Pgit statusadd .gitignore[8Pstatusrm --cached -r -f 'Team Members/Gur Machol'/[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pr -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krm -r -f 'Group 2'/1'/[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krm -r -f 'Team Members/Sushim Chakrabortty'/[5PDiego Calderon'/Amiriyah Atwood'/[5PGur Machol'/'/[KWyatt Blevins'/[1PAsong Suh Jr'/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krm -r 'Team Members'/[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "/train_set" >> .gitignore[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pest[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4P*.jpg[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pgit statusls[Kclear[3Plscd [1Plscd Asong\ Suh\ Jr/[C[C[C[C[C[C[C[C[C[Cls[Kcd Team\ Members/[C[C[C[C[C[C[C[C[C[Cls[Kgit rm --cached -f 'Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2PTeam Members/Asong Suh Jr/CV-Notebooks-Summer-2022[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd 'Team Members'/[K[C[C[C[C[C[C[C[C[C[Cls[Kgit add 'Group 2' [C[C[C[C[C[C[C[C[C[Cls[Kgit add 'Team Members'/[C[C[C[C[C[C[C[C[C[Cls[Kgit add 'Group 2' [C[C[C[C[C[C[C[C[C[Cclear[Kgit status[5Pcleargit add 'Group 2' [C[C[C[C[C[C[C[C[C[Cls[Kgit add 'Group 2' [C[C[C[C[C[C[C[C[C[Cclear[Kgit add 'Group 2' [1P[1@1
+fatal: pathspec 'Group 1' did not match any files
+(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term     Miniconda3-latest-Linux-x86_64.sh     README.md             [0m[01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m   Miniconda3-latest-Linux-x86_64.sh.1  [01;34m'Team Members'[0m         terminal.term
+[01;34m'Group 2'[0m                   ProjectSpec.txt                       asong_anaconda.term
+(base) ]0;~[01;34m~[00m$ lsgit add 'Group 1' [1P[1@2
+(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term     Miniconda3-latest-Linux-x86_64.sh     README.md             [0m[01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m   Miniconda3-latest-Linux-x86_64.sh.1  [01;34m'Team Members'[0m         terminal.term
+[01;34m'Group 2'[0m                   ProjectSpec.txt                       asong_anaconda.term
+(base) ]0;~[01;34m~[00m$ git t[Ksts[Katus
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   .gitignore[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/[m
+
+(base) ]0;~[01;34m~[00m$ git add 'Group 2'
+(base) ]0;~[01;34m~[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   .gitignore[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mProjectSpec.txt[m
+	[31mTeam Members/[m
+
+(base) ]0;~[01;34m~[00m$ [K(base) ]0;~[01;34m~[00m$ git restore
+fatal: you must specify path(s) to restore
+(base) ]0;~[01;34m~[00m$ git restore --staged 'Group 2'/Group\ 2/Week\ 1/[K[K[K[K[K[K[K[K[K[K[K[K[Kp [K[K[K[K[K[K'Group 2'/[1P'/1'/
+error: pathspec 'Group 1/' did not match any file(s) known to git
+(base) ]0;~[01;34m~[00m$ git [K[K[K[Kgit add [K[K[K[K[K[K[K[Kcat .gitignore
+Miniconda3-latest-Linux-x86_64.sh
+/miniconda3
+/CV-Notebooks-Summer-2022
+*.term
+Miniconda3-latest-Linux-x86_64.sh.1
+*.jpg
+/test_set
+/train_set
+(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term   [0m[01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh   Miniconda3-latest-Linux-x86_64.sh.1   ProjectSpec.txt   README.md  [01;34m'Team Members'[0m   asong_anaconda.term   [01;34mminiconda3[0m   terminal.term
+(base) ]0;~[01;34m~[00m$ cd terminal.term [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K TE
+bash: cd: TE: No such file or directory
+(base) ]0;~[01;34m~[00m$ cd TE[Keam\ Members/
+(base) ]0;~/Team Members[01;34m~/Team Members[00m$ ls
+[0m[01;34m'Amiriyah Atwood'[0m  [01;34m'Asong Suh Jr'[0m  [01;34m'Diego Calderon'[0m  [01;34m'Gur Machol'[0m  [01;34m'Sushim Chakrabortty'[0m  [01;34m'Wyatt Blevins'[0m
+(base) ]0;~/Team Members[01;34m~/Team Members[00m$ cd AS[Ksong\ Suh\ Jr/
+(base) ]0;~/Team Members/Asong Suh Jr[01;34m~/Team Members/Asong Suh Jr[00m$ ls
+[0m[01;34mCV-Notebooks-Summer-2022[0m  Miniconda3-latest-Linux-x86_64.sh  Miniconda3-latest-Linux-x86_64.sh.1  asuhterminal.term
+(base) ]0;~/Team Members/Asong Suh Jr[01;34m~/Team Members/Asong Suh Jr[00m$ cd ..
+(base) ]0;~/Team Members[01;34m~/Team Members[00m$ cd Gr[Kur\ Machol/
+(base) ]0;~/Team Members/Gur Machol[01;34m~/Team Members/Gur Machol[00m$ ls
+ [0m[01;34mCV-Notebooks-Summer-2022[0m   Gur_terminal.term   Miniconda3-latest-Linux-x86_64.sh   face_recognition_revised.ipynb   intro_to_python.ipynb  '~export'
+(base) ]0;~/Team Members/Gur Machol[01;34m~/Team Members/Gur Machol[00m$ ls
+ [0m[01;34mCV-Notebooks-Summer-2022[0m   Gur_terminal.term   Miniconda3-latest-Linux-x86_64.sh   face_recognition_revised.ipynb   intro_to_python.ipynb  '~export'
+(base) ]0;~/Team Members/Gur Machol[01;34m~/Team Members/Gur Machol[00m$ cd ..
+(base) ]0;~/Team Members[01;34m~/Team Members[00m$ ls
+[0m[01;34m'Amiriyah Atwood'[0m  [01;34m'Asong Suh Jr'[0m  [01;34m'Diego Calderon'[0m  [01;34m'Gur Machol'[0m  [01;34m'Sushim Chakrabortty'[0m  [01;34m'Wyatt Blevins'[0m
+(base) ]0;~/Team Members[01;34m~/Team Members[00m$ cd Diego\ Calderon/
+(base) ]0;~/Team Members/Diego Calderon[01;34m~/Team Members/Diego Calderon[00m$ ls
+ Miniconda3-latest-Linux-x86_64.sh  'diego terminal.term'
+(base) ]0;~/Team Members/Diego Calderon[01;34m~/Team Members/Diego Calderon[00m$ l[Kcd ..
+(base) ]0;~/Team Members[01;34m~/Team Members[00m$ cd ..
+(base) ]0;~[01;34m~[00m$ cd 
+(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term   [0m[01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh   Miniconda3-latest-Linux-x86_64.sh.1   ProjectSpec.txt   README.md  [01;34m'Team Members'[0m   asong_anaconda.term   [01;34mminiconda3[0m   terminal.term
+(base) ]0;~[01;34m~[00m$ lscd ..[3Plscd Diego\ Calderon/[C[C[C[C[C[C[C[C[C[Cls[Kcd ..[3Plscd Gur\ Machol/..[K[3Plscd Asong\ Suh\ Jr/[C[C[C[C[C[C[C[C[C[Cls[Kcd Team\ Members/E[K[3Plscat .gitignore[C[C[C[C[C[C[C[C[C[Cgit restore --staged 'Group 1'/[C[C[C[C[C[C[C[C[C[C[17Pcat .gitignore
+Miniconda3-latest-Linux-x86_64.sh
+/miniconda3
+/CV-Notebooks-Summer-2022
+*.term
+Miniconda3-latest-Linux-x86_64.sh.1
+*.jpg
+/test_set
+/train_set
+(base) ]0;~[01;34m~[00m$ cat .gitignore[C[C[C[C[C[C[C[C[C[Cls[Kcat .gitignore[C[C[C[C[C[C[C[C[C[C[Kgit as[Kdd Team\ Members/
+warning: adding embedded git repository: Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022
+[33mhint: You've added another git repository inside your current repository.[m
+[33mhint: Clones of the outer repository will not contain the contents of[m
+[33mhint: the embedded repository and will not know how to obtain it.[m
+[33mhint: If you meant to add a submodule, use:[m
+[33mhint: [m
+[33mhint: 	git submodule add <url> Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[m
+[33mhint: [m
+[33mhint: If you added this path by mistake, you can remove it from the[m
+[33mhint: index with:[m
+[33mhint: [m
+[33mhint: 	git rm --cached Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[m
+[33mhint: [m
+[33mhint: See "git help submodule" for more information.[m
+warning: adding embedded git repository: Team Members/Gur Machol/CV-Notebooks-Summer-2022
+(base) ]0;~[01;34m~[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   .gitignore[m
+	[32mnew file:   Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[m
+	[32mnew file:   Team Members/Gur Machol/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m
+	[32mnew file:   Team Members/Gur Machol/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/~export[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	[31mmodified:   Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[m (modified content, untracked content)
+	[31mmodified:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mProjectSpec.txt[m
+
+(base) ]0;~[01;34m~[00m$ git add Group\ 2/
+(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term   [0m[01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh   Miniconda3-latest-Linux-x86_64.sh.1   ProjectSpec.txt   README.md  [01;34m'Team Members'[0m   asong_anaconda.term   [01;34mminiconda3[0m   terminal.term
+(base) ]0;~[01;34m~[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   .gitignore[m
+	[32mnew file:   Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[m
+	[32mnew file:   Team Members/Gur Machol/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m
+	[32mnew file:   Team Members/Gur Machol/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/~export[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	[31mmodified:   Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[m (modified content, untracked content)
+	[31mmodified:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+	[31mProjectSpec.txt[m
+
+(base) ]0;~[01;34m~[00m$ git add ProjectSpec.txt 
+(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term   [0m[01;34mCV-Notebooks-Summer-2022[0m  [01;34m'Group 2'[0m   Miniconda3-latest-Linux-x86_64.sh   Miniconda3-latest-Linux-x86_64.sh.1   ProjectSpec.txt   README.md  [01;34m'Team Members'[0m   asong_anaconda.term   [01;34mminiconda3[0m   terminal.term
+(base) ]0;~[01;34m~[00m$ lsgit add ProjectSpec.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[K
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   .gitignore[m
+	[32mnew file:   ProjectSpec.txt[m
+	[32mnew file:   Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[m
+	[32mnew file:   Team Members/Gur Machol/.face_recognition_revised.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/.intro_to_python.ipynb.sage-jupyter2[m
+	[32mnew file:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m
+	[32mnew file:   Team Members/Gur Machol/face_recognition_revised.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/intro_to_python.ipynb[m
+	[32mnew file:   Team Members/Gur Machol/~export[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	[31mmodified:   Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022[m (modified content, untracked content)
+	[31mmodified:   Team Members/Gur Machol/CV-Notebooks-Summer-2022[m (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m..2022-06-07-144450.board.ipynb.sage-jupyter2[m
+	[31m.:902313665-fakexinerama[m
+	[31m.Xauthority[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.conda/[m
+	[31m.config/[m
+	[31m.dbus/[m
+	[31m.fakexinerama[m
+	[31m.gitconfig[m
+	[31m.ipython/[m
+	[31m.jupyter-blobs-v0.db[m
+	[31m.jupyter/[m
+	[31m.local/[m
+	[31m.npm/[m
+	[31m.octave_hist[m
+	[31m.smc/[m
+	[31m.tcshrc[m
+	[31m.viminfo[m
+	[31m.xonshrc[m
+	[31m.xsession-errors[m
+	[31m.zshrc[m
+
+(base) ]0;~[01;34m~[00m$ git statusls[Kgit add ProjectSpec.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kls[Kgit add Group\ 2/[7Pstatusadd Team\ Members/[C[C[C[C[C[C[C[C[C[C[8Pcat .gitignore[C[C[C[C[C[C[C[C[C[Cls[Kcd ..[3Plscd Diego\ Calderon/[C[C[C[C[C[C[C[C[C[Cls[Kcd ..[3Plscd Gur\ Machol/..[K[3Plscd Asong\ Suh\ Jr/[C[C[C[C[C[C[C[C[C[Cls[Kcd Team\ Members/E[K[3Plscat .gitignore[C[C[C[C[C[C[C[C[C[Cgit restore --staged 'Group 1'/[K[1Pstatusadd 'Group 2'[7Pstatusls[Kgit add 'Group 2' [C[C[C[C[C[C[C[C[C[Cls[Kgit add 'Group 1' [C[C[C[C[C[C[C[C[C[C[4Pcat .gitignore[C[C[C[C[C[C[C[C[C[C[4Pgit statusadd .gitignore[8Pstatusadd .gitignore[8Pstatuscat .gitignore[C[C[C[C[C[C[C[C[C[Cgit add 'Group 1' [C[C[C[C[C[C[C[C[C[Cls[Kgit add 'Group 2' [C[C[C[C[C[C[C[C[C[Cls[Kgit statusadd 'Group 2'[7Pstatusrestore --staged 'Group 1'/[C[C[C[C[C[C[C[C[C[C[17Pcat .gitignore[C[C[C[C[C[C[C[C[C[Cls[Kcd TEeam\ Members/E[Keam\ Members/E[K[3Plscat .gitignore[C[C[C[C[C[C[C[C[C[Cgit restore --staged 'Group 1'/[K[1Pstatusadd 'Group 2'[7Pstatusls[Kgit add 'Group 2' [C[C[C[C[C[C[C[C[C[Cls[Kgit add 'Group 1' [C[C[C[C[C[C[C[C[C[C[4Pcat .gitignore[C[C[C[C[C[C[C[C[C[C[4Pgit statusadd .gitignore[8Pstatusrm --cached -r -f 'Team Members/Gur Machol'/[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pr -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krm -r -f 'Group 2'/1'/[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krm -r -f 'Team Members/Sushim Chakrabortty'/[5PDiego Calderon'/Amiriyah Atwood'/[5PGur Machol'/'/[KWyatt Blevins'/[1PAsong Suh Jr'/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Krm -r 'Team Members'/[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "/train_set" >> .gitignore[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pest[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4P*.jpg[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pgit statusls[Kclear[3Plscd [1Plscd Asong\ Suh\ Jr/[C[C[C[C[C[C[C[C[C[Cls[Kcd Team\ Members/[C[C[C[C[C[C[C[C[C[Cls[Kgit rm --cached -f 'Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@-f [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd Team\ Members/[C[C[C[C[C[C[C[C[C[Cls[Kcd Asong\ Suh\ Jr/[C[C[C[C[C[C[C[C[C[Cls[Kcd [1Plsclear[3Plsgit statusecho "*.jpg" >> .gitignore[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@/test_set[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@rain[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pest[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4P*.jpg[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1@*[1@/[1@C[1@v[1P[1@V[1@-[1@N[1@o[1@t[1@e[1@b[1@o[1@o[1@k[1@s[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[24@CV-Notebooks-Summer-2022
+(base) ]0;~[01;34m~[00m$ cat .gitignore
+Miniconda3-latest-Linux-x86_64.sh
+/miniconda3
+/CV-Notebooks-Summer-2022
+*.term
+Miniconda3-latest-Linux-x86_64.sh.1
+*.jpg
+/test_set
+/train_set
+*/CV-Notebooks-Summer-2022
+(base) ]0;~[01;34m~[00m$ git rm[K[K[K[K[K[Kcat .gitignore[C[C[C[C[C[C[C[C[C[C[33@echo "*/CV-Notebooks-Summer-2022" >>[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit status[Kls[K[K(base) ]0;~[01;34m~[00m$ ls[K[Kgit rm 'Team Members'/
+fatal: not removing 'Team Members/' recursively without -r
+(base) ]0;~[01;34m~[00m$ git rm 'Team Members'/[1@-[1@r[1@ 
+fatal: could not lookup name for submodule 'Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022'
+(base) ]0;~[01;34m~[00m$ git rm -r 'Team Members'/[C[1@-[C[1@-[1@c[1@a[1@c[1@h[1@e[1@d[1@ 
+error: the following files have staged content different from both the
+file and the HEAD:
+    Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022
+    Team Members/Gur Machol/CV-Notebooks-Summer-2022
+(use -f to force removal)
+(base) ]0;~[01;34m~[00m$ git rm --cached -r 'Team Members'/[1@-[1@f[1@ 
+rm 'Team Members/Asong Suh Jr/CV-Notebooks-Summer-2022'
+rm 'Team Members/Gur Machol/.face_recognition_revised.ipynb.sage-jupyter2'
+rm 'Team Members/Gur Machol/.intro_to_python.ipynb.sage-jupyter2'
+rm 'Team Members/Gur Machol/CV-Notebooks-Summer-2022'
+rm 'Team Members/Gur Machol/face_recognition_revised.ipynb'
+rm 'Team Members/Gur Machol/intro_to_python.ipynb'
+rm 'Team Members/Gur Machol/~export'
+(base) ]0;~[01;34m~[00m$ clear
+[H[J(base) ]0;~[01;34m~[00m$ ls
+ 2022-06-13-093144.term     Miniconda3-latest-Linux-x86_64.sh     README.md             [0m[01;34mminiconda3[0m
+ [01;34mCV-Notebooks-Summer-2022[0m   Miniconda3-latest-Linux-x86_64.sh.1  [01;34m'Team Members'[0m         terminal.term
+[01;34m'Group 2'[0m                   ProjectSpec.txt                       asong_anaconda.term
+(base) ]0;~[01;34m~[00m$ [K(base) ]0;~[01;34m~[00m$ 

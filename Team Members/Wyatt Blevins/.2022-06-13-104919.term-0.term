@@ -1,0 +1,358 @@
+(base) ]0;~/Team Members/Wyatt Blevins[01;34m~/Team Members/Wyatt Blevins[00m$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh[K[K[K[K[K[K[K[K[K[K[K[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kconda
+usage: conda [-h] [-V] command ...
+
+conda is a tool for managing and deploying applications, environments and packages.
+
+Options:
+
+positional arguments:
+  command
+    clean        Remove unused packages and caches.
+    compare      Compare packages between conda environments.
+    config       Modify configuration values in .condarc. This is modeled after the git config
+                 command. Writes to the user .condarc file
+                 (/projects/9f552ddb-0255-4438-a179-8f8c475cfce3/.condarc) by default.
+    create       Create a new conda environment from a list of specified packages.
+    help         Displays a list of available conda commands and their help strings.
+    info         Display information about current conda install.
+    init         Initialize conda for shell interaction. [Experimental]
+    install      Installs a list of packages into a specified conda environment.
+    list         List linked packages in a conda environment.
+    package      Low-level conda package utility. (EXPERIMENTAL)
+    remove       Remove a list of packages from a specified conda environment.
+    uninstall    Alias for conda remove.
+    run          Run an executable in a conda environment.
+    search       Search for packages and display associated information. The input is a
+                 MatchSpec, a query language for conda packages. See examples below.
+    update       Updates conda packages to the latest compatible version.
+    upgrade      Alias for conda update.
+
+optional arguments:
+  -h, --help     Show this help message and exit.
+  -V, --version  Show the conda version number and exit.
+
+conda commands available from other packages:
+  content-trust
+  env
+(base) ]0;~/Team Members/Wyatt Blevins[01;34m~/Team Members/Wyatt Blevins[00m$ bash 
+.2022-06-13-104919.term-0.term        Miniconda3-latest-Linux-x86_64.sh
+.intro_to_python.ipynb.sage-jupyter2  face_detect/
+2022-06-13-104919.term                intro_to_python.ipynb
+(base) ]0;~/Team Members/Wyatt Blevins[01;34m~/Team Members/Wyatt Blevins[00m$ bash Miniconda3-latest-Linux-x86_64.sh 
+
+Welcome to Miniconda3 py39_4.12.0
+
+In order to continue the installation process, please review the license
+agreement.
+Please, press ENTER to continue
+>>> 
+======================================
+End User License Agreement - Miniconda
+======================================
+
+Copyright 2015-2022, Anaconda, Inc.
+
+All rights reserved under the 3-clause BSD License:
+
+This End User License Agreement (the "Agreement") is a legal agreement between you and Anaconda, I
+nc. ("Anaconda") and governs your use of Miniconda.
+
+Subject to the terms of this Agreement, Anaconda hereby grants you a non-exclusive, non-transferab
+le license to:
+
+  * Install and use the Miniconda,
+  * Modify and create derivative works of sample source code delivered in Miniconda subject to the
+ Terms of Service for the Repository (as defined hereinafter) available at https://www.anaconda.co
+m/terms-of-service, and
+  * Redistribute code files in source (if provided to you by Anaconda as source) and binary forms,
+ with or without modification subject to the requirements set forth below.
+
+Anaconda may, at its option, make available patches, workarounds or other updates to Miniconda. Un
+less the updates are provided with their separate governing terms, they are deemed part of Minicon
+da licensed to you as provided in this Agreement. This Agreement does not entitle you to any suppo
+rt for Miniconda.
+
+Anaconda reserves all rights not expressly granted to you in this Agreement.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted pro
+vided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this list of conditions
+ and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice, this list of conditi
+ons and the following disclaimer in the documentation and/or other materials provided with the dis
+tribution.
+  * Neither the name of Anaconda nor the names of its contributors may be used to endorse or promo
+te products derived from this software without specific prior written permission.
+
+You acknowledge that, as between you and Anaconda, Anaconda owns all right, title, and interest, i
+ncluding all intellectual property rights, in and to Miniconda and, with respect to third-party pr
+oducts distributed with or through Miniconda, the applicable third-party licensors own all right, 
+title and interest, including all intellectual property rights, in and to such products. If you se
+nd or transmit any communications or materials to Anaconda suggesting or recommending changes to t
+[3m--More--[23mhe software or documentation, including without limitation, new features or functionality relating
+[3m--More--[23m thereto, or any comments, questions, suggestions or the like ("Feedback"), Anaconda is free to us
+[3m--More--[23me such Feedback. You hereby assign to Anaconda all right, title, and interest in, and Anaconda is 
+[3m--More--[23mfree to use, without any attribution or compensation to any party, any ideas, know-how, concepts, 
+[3m--More--[23mtechniques or other intellectual property rights contained in the Feedback, for any purpose whatso
+[3m--More--[23mever, although Anaconda is not required to use any Feedback.
+[3m--More--[23m[K
+[3m--More--[23mDISCLAIMER
+[3m--More--[23m==========
+[3m--More--[23m[K
+[3m--More--[23mTHIS SOFTWARE IS PROVIDED BY ANACONDA AND ITS CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARR
+[3m--More--[23mANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+[3m--More--[23m PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL ANACONDA BE LIABLE FOR ANY DIRECT, INDIRECT,
+[3m--More--[23m INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREM
+[3m--More--[23mENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWE
+[3m--More--[23mVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDI
+[3m--More--[23mNG NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+[3m--More--[23m THE POSSIBILITY OF SUCH DAMAGE.
+[3m--More--[23m[K
+[3m--More--[23mTO THE MAXIMUM EXTENT PERMITTED BY LAW, ANACONDA AND ITS AFFILIATES SHALL NOT BE LIABLE FOR ANY SP
+[3m--More--[23mECIAL, INCIDENTAL, PUNITIVE OR CONSEQUENTIAL DAMAGES, OR ANY LOST PROFITS, LOSS OF USE, LOSS OF DA
+[3m--More--[23mTA OR LOSS OF GOODWILL, OR THE COSTS OF PROCURING SUBSTITUTE PRODUCTS, ARISING OUT OF OR IN CONNEC
+[3m--More--[23mTION WITH THIS AGREEMENT OR THE USE OR PERFORMANCE OF MINICONDA, WHETHER SUCH LIABILITY ARISES FRO
+[3m--More--[23mM ANY CLAIM BASED UPON BREACH OF CONTRACT, BREACH OF WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUC
+[3m--More--[23mT LIABILITY OR ANY OTHER CAUSE OF ACTION OR THEORY OF LIABILITY. IN NO EVENT WILL THE TOTAL CUMULA
+[3m--More--[23mTIVE LIABILITY OF ANACONDA AND ITS AFFILIATES UNDER OR ARISING OUT OF THIS AGREEMENT EXCEED US0.00
+[3m--More--[23m.[K
+[3m--More--[23m[K
+[3m--More--[23mMiscellaneous
+[3m--More--[23m=============
+[3m--More--[23m[K
+[3m--More--[23mIf you want to terminate this Agreement, you may do so by discontinuing use of Miniconda. Anaconda
+[3m--More--[23m may, at any time, terminate this Agreement and the license granted hereunder if you fail to compl
+[3m--More--[23my with any term of this Agreement. Upon any termination of this Agreement, you agree to promptly d
+[3m--More--[23miscontinue use of the Miniconda and destroy all copies in your possession or control. Upon any ter
+[3m--More--[23mmination of this Agreement all provisions survive except for the licenses granted to you.
+[3m--More--[23m[K
+[3m--More--[23mThis Agreement is governed by and construed in accordance with the internal laws of the State of T
+[3m--More--[23mexas without giving effect to any choice or conflict of law provision or rule that would require o
+[3m--More--[23mr permit the application of the laws of any jurisdiction other than those of the State of Texas. A
+[3m--More--[23mny legal suit, action, or proceeding arising out of or related to this Agreement or the licenses g
+[3m--More--[23mranted hereunder by you must be instituted exclusively in the federal courts of the United States 
+[3m--More--[23mor the courts of the State of Texas in each case located in Travis County, Texas, and you irrevoca
+[3m--More--[23mbly submit to the jurisdiction of such courts in any such suit, action, or proceeding.
+[3m--More--[23m[K
+[3m--More--[23mNotice of Third Party Software Licenses
+[3m--More--[23m=======================================
+[3m--More--[23m[K
+[3m--More--[23mMiniconda provides access to a repository (the "Repository") which contains software packages or t
+[3m--More--[23mools licensed on an open source basis from third parties and binary packages of these third party 
+[3m--More--[23mtools. These third party software packages or tools are provided on an "as is" basis and are subje
+[3m--More--[23mct to their respective license agreements as well as this Agreement and the Terms of Service for t
+[3m--More--[23mhe Repository located at https://www.anaconda.com/terms-of-service; provided, however, no restrict
+[3m--More--[23mion contained in the Terms of Service shall be construed so as to limit Your ability to download t
+[3m--More--[23mhe packages contained in Miniconda provided you comply with the license for each such package. The
+[3m--More--[23mse licenses may be accessed from within the Miniconda software[1] or https://www.anaconda.com/lega
+[3m--More--[23ml. Information regarding which license is applicable is available from within many of the third pa
+[3m--More--[23mrty software packages and tools and at https://repo.anaconda.com/pkgs/main/ and https://repo.anaco
+[3m--More--[23mnda.com/pkgs/r/. Anaconda reserves the right, in its sole discretion, to change which third party 
+[3m--More--[23mtools are included in the Repository accessible through Miniconda.
+[3m--More--[23m[K
+[3m--More--[23m[K
+[3m--More--[23mIntel Math Kernel Library
+[3m--More--[23m-------------------------
+[3m--More--[23m[K
+[3m--More--[23mMiniconda provides access to re-distributable, run-time, shared-library files from the Intel Math 
+[3m--More--[23mKernel Library ("MKL binaries").
+[3m--More--[23m[K
+[3m--More--[23mCopyright 2018 Intel Corporation. License available at https://software.intel.com/en-us/license/in
+[3m--More--[23mtel-simplified-software-license (the "MKL License").
+[3m--More--[23m[K
+[3m--More--[23mYou may use and redistribute the MKL binaries, without modification, provided the following condit
+[3m--More--[23mions are met:
+[3m--More--[23m[K
+[3m--More--[23m  * Redistributions must reproduce the above copyright notice and the following terms of use in th
+[3m--More--[23me MKL binaries and in the documentation and/or other materials provided with the distribution.
+[3m--More--[23m  * Neither the name of Intel nor the names of its suppliers may be used to endorse or promote pro
+[3m--More--[23mducts derived from the MKL binaries without specific prior written permission.
+[3m--More--[23m  * No reverse engineering, decompilation, or disassembly of the MKL binaries is permitted.
+[3m--More--[23m[K
+[3m--More--[23mYou are specifically authorized to use and redistribute the MKL binaries with your installation of
+[3m--More--[23m Miniconda subject to the terms set forth in the MKL License. You are also authorized to redistrib
+[3m--More--[23mute the MKL binaries with Miniconda or in the Anaconda package that contains the MKL binaries. If 
+[3m--More--[23mneeded, instructions for removing the MKL binaries after installation of Miniconda are available a
+[3m--More--[23mt https://docs.anaconda.com.
+[3m--More--[23m[K
+[3m--More--[23mcuDNN Software
+[3m--More--[23m--------------
+[3m--More--[23m[K
+[3m--More--[23mMiniconda also provides access to cuDNN software binaries ("cuDNN binaries") from NVIDIA Corporati
+[3m--More--[23mon. You are specifically authorized to use the cuDNN binaries with your installation of Miniconda 
+[3m--More--[23msubject to your compliance with the license agreement located at https://docs.nvidia.com/deeplearn
+[3m--More--[23ming/sdk/cudnn-sla/index.html. You are also authorized to redistribute the cuDNN binaries with an M
+[3m--More--[23miniconda package that contains the cuDNN binaries. You can add or remove the cuDNN binaries utiliz
+[3m--More--[23ming the install and uninstall features in Miniconda.
+[3m--More--[23m[K
+[3m--More--[23mcuDNN binaries contain source code provided by NVIDIA Corporation.
+[3m--More--[23m[K
+[3m--More--[23mArm Performance Libraries
+[3m--More--[23m-------------------------
+[3m--More--[23m[K
+[3m--More--[23mArm Performance Libraries (Free Version): Anaconda provides access to software and related documen
+[3m--More--[23mtation from the Arm Performance Libraries ("Arm PL") provided by Arm Limited. By installing or oth
+[3m--More--[23merwise accessing the Arm PL, you acknowledge and agree that use and distribution of the Arm PL is 
+[3m--More--[23msubject to your compliance with the Arm PL end user license agreement located at: https://develope
+[3m--More--[23mr.arm.com/tools-and-software/server-and-hpc/downloads/arm-performance-libraries/eula.
+[3m--More--[23m[K
+[3m--More--[23mExport; Cryptography Notice
+[3m--More--[23m===========================
+[3m--More--[23m[K
+[3m--More--[23mYou must comply with all domestic and international export laws and regulations that apply to the 
+[3m--More--[23msoftware, which include restrictions on destinations, end users, and end use. Miniconda includes c
+[3m--More--[23mryptographic software. The country in which you currently reside may have restrictions on the impo
+[3m--More--[23mrt, possession, use, and/or re-export to another country, of encryption software. BEFORE using any
+[3m--More--[23m encryption software, please check your country's laws, regulations and policies concerning the im
+[3m--More--[23mport, possession, or use, and re-export of encryption software, to see if this is permitted. See t
+[3m--More--[23mhe Wassenaar Arrangement http://www.wassenaar.org/ for more information.
+[3m--More--[23m[K
+[3m--More--[23mAnaconda has self-classified this software as Export Commodity Control Number (ECCN) EAR99, which 
+[3m--More--[23mincludes mass market information security software using or performing cryptographic functions wit
+[3m--More--[23mh asymmetric algorithms. No license is required for export of this software to non-embargoed count
+[3m--More--[23mries.[K
+[3m--More--[23m[K
+[3m--More--[23mThe Intel Math Kernel Library contained in Miniconda is classified by Intel as ECCN 5D992.c with n
+[3m--More--[23mo license required for export to non-embargoed countries.
+[3m--More--[23m[K
+[3m--More--[23mThe following packages listed on https://www.anaconda.com/cryptography are included in the Reposit
+[3m--More--[23mory accessible through Miniconda that relate to cryptography.
+[3m--More--[23m[K
+[3m--More--[23mLast updated March 21, 2022
+
+Do you accept the license terms? [yes|no]
+[no] >>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> 
+Please answer 'yes' or 'no':'
+>>> yes
+
+Miniconda3 will now be installed into this location:
+/projects/9f552ddb-0255-4438-a179-8f8c475cfce3/miniconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/projects/9f552ddb-0255-4438-a179-8f8c475cfce3/miniconda3] >>> 
+ERROR: File or directory already exists: '/projects/9f552ddb-0255-4438-a179-8f8c475cfce3/miniconda3'
+If you want to update an existing installation, use the -u option.
+(base) ]0;~/Team Members/Wyatt Blevins[01;34m~/Team Members/Wyatt Blevins[00m$ conda -v
+usage: conda [-h] [-V] command ...
+conda: error: the following arguments are required: command
+(base) ]0;~/Team Members/Wyatt Blevins[01;34m~/Team Members/Wyatt Blevins[00m$ conda -v[KV
+conda 4.12.0
+(base) ]0;~/Team Members/Wyatt Blevins[01;34m~/Team Members/Wyatt Blevins[00m$ [K(base) ]0;~/Team Members/Wyatt Blevins[01;34m~/Team Members/Wyatt Blevins[00m$ [K(base) ]0;~/Team Members/Wyatt Blevins[01;34m~/Team Members/Wyatt Blevins[00m$ conda create -n Test_ENV python -[K=[1P=[C3.8
+Collecting package metadata (current_repodata.json): - \ | done
+Solving environment: - \ done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.12.0
+  latest version: 4.13.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /projects/9f552ddb-0255-4438-a179-8f8c475cfce3/miniconda3/envs/Test_ENV
+
+  added / updated specs:
+    - python=3.8
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2022.4.26-h06a4308_0
+  certifi            pkgs/main/linux-64::certifi-2022.5.18.1-py38h06a4308_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.38-h1181459_1
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_2
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1
+  ncurses            pkgs/main/linux-64::ncurses-6.3-h7f8727e_2
+  openssl            pkgs/main/linux-64::openssl-1.1.1o-h7f8727e_0
+  pip                pkgs/main/linux-64::pip-21.2.4-py38h06a4308_0
+  python             pkgs/main/linux-64::python-3.8.13-h12debd9_0
+  readline           pkgs/main/linux-64::readline-8.1.2-h7f8727e_1
+  setuptools         pkgs/main/linux-64::setuptools-61.2.0-py38h06a4308_0
+  sqlite             pkgs/main/linux-64::sqlite-3.38.3-hc218d9a_0
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0
+  wheel              pkgs/main/noarch::wheel-0.37.1-pyhd3eb1b0_0
+  xz                 pkgs/main/linux-64::xz-5.2.5-h7f8727e_1
+  zlib               pkgs/main/linux-64::zlib-1.2.12-h7f8727e_2
+
+
+Proceed ([y]/n)? 
+
+Preparing transaction: / - \ | done
+Verifying transaction: - \ | / - \ | / - \ | / - \ | / - \ | done
+Executing transaction: - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+#
+# To activate this environment, use
+#
+#     $ conda activate Test_ENV
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) ]0;~/Team Members/Wyatt Blevins[01;34m~/Team Members/Wyatt Blevins[00m$ 
