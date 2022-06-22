@@ -26,7 +26,8 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 32 * 1024 * 1024
 
-model = torch.hub.load("ultralytics/yolov5", "custom", path = '1best.pt', force_reload=True)
+model = torch.hub.load("ultralytics/yolov5", "custom", path = 'best.pt', force_reload=True)
+# model.agnostic = True
 
 def allowed_file(filename): #checks if file type is a picture
     return '.' in filename and \
@@ -53,19 +54,20 @@ def home(): #checks if user has inputed a file
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            print("SAVED")
+            
             return redirect(url_for('uploaded_file',
                                     filename=filename))
 
     return render_template('index.html')
 
 
-@app.route(f'{base_url}/uploads/<filename>')
+@app.route(f'{base_url}/uploads/<filename>', methods=['GET', 'POST'])
 def uploaded_file(filename): #inputs filename and runs it though model as a pandas array
-
+    print(filename)
     here = os.getcwd()
     image_path = os.path.join(here, app.config['UPLOAD_FOLDER'], filename)
     results = model(image_path, size=416)
+
     if len(results.pandas().xyxy) > 0:
         results.print()
         save_dir = os.path.join(here, app.config['UPLOAD_FOLDER'])
@@ -95,14 +97,38 @@ def uploaded_file(filename): #inputs filename and runs it though model as a pand
         labels = set(labels)
         labels = [emotion.capitalize() for emotion in labels]
         labels = and_syntax(labels)
-        print("TEST to see if trying to render results.html")
+
+    print(request.method)
+    if request.method == 'POST':
+        # check if the post request has the file part
+        print(request.files)
+        if 'file' not in request.files:
+            flash('No file part')
+            return redirect(request.url)
+
+        file = request.files['file']
+        print(file)
+        # if user does not select file, browser also
+        # submit an empty part without filename
+        if file.filename == '':
+            flash('No selected file')
+            return redirect(request.url)
+
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            
+            return redirect(url_for('uploaded_file',
+                                    filename=filename))
+
         return render_template('results.html', confidences=format_confidences, labels=labels,
                                old_filename=filename,
                                filename=filename)
+
     else:
         found = False
-        print("TEST to see if trying to render results.html")
         return render_template('results.html', labels='No Weapons', old_filename=filename, filename=filename)
+
 
 
 @app.route(f'{base_url}/uploads/<path:filename>')
