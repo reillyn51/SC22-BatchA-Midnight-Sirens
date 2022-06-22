@@ -17,10 +17,10 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top header-white main-nav navbar-togglable">
         <div class="container">
-            <a class="navbar-brand" href="/#">
+            <a class="navbar-brand" href="../">
                 <img src="{{ url_for('static', filename='images1/ai camp logo1.svg')}}" width="55" height="55" alt="">
               </a>
-            <a class="navbar-brand " href="/#">
+            <a class="navbar-brand " href="../">
                 <h3 class="colored-text">Weapon Detector</h3>
             </a>
             <!-- Toggler -->
@@ -45,7 +45,7 @@
                                 </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="https://cocalc13.ai-camp.dev/9f552ddb-0255-4438-a179-8f8c475cfce3/port/12345/#about" class="nav-link colored-text">
+                            <a href="../" class="nav-link colored-text">
                                 Home
                             </a>
                         </li>
@@ -89,37 +89,7 @@
 
                       <form name=file method=post enctype=multipart/form-data>
                                 <div class="col"><input class="form-control" id="file" type="file"   name='file' onchange="this.form.submit();"/></div>
-                        <style>
-                                    .form-control{
-                                      background: #1f1f1f;
-                                      color: white;
-                                      border-style: outset;
-                                      border-color: #1f1f1f;
-                                      height: 7vh;
-                                      width: 1wh;
-                                      font: bold15px arial,sans-serif;
-                                      text-shadow: none;
-                                    }
-                                    .col{
-                                      background: black;
-                                      border-style: outset;
-                                    }
 
-                                    input[type=file]::file-selector-button {
-                                      border: 2px solid #828091;
-                                      padding: .2em .4em;
-                                      border-radius: .2em;
-                                      background-color: #636363;
-                                      transition: 1s;
-                                      color: white;
-                                    }
-
-                                    input[type=file]::file-selector-button:hover {
-                                      background-color: #81ecec;
-                                      border: 2px solid #00cec9;
-                                    }
-
-                                </style>
                               </form>
                 </div>
                 <div class="col">
