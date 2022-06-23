@@ -5,6 +5,10 @@ from flask import render_template
 from url_utils import get_base_url
 import os
 import torch
+import random
+
+
+random.seed(10)
 
 # setup the webserver
 # port may need to be changed if there are multiple flask servers running on same server
@@ -34,17 +38,15 @@ def allowed_file(filename): #checks if file type is a picture
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route(f'{base_url}', methods=['GET', 'POST'])
-def home(): #checks if user has inputed a file
+def home():
     print(request.method)
     if request.method == 'POST':
         # check if the post request has the file part
-        print(request.files)
         if 'file' not in request.files:
             flash('No file part')
             return redirect(request.url)
 
         file = request.files['file']
-        print(file)
         # if user does not select file, browser also
         # submit an empty part without filename
         if file.filename == '':
@@ -67,6 +69,27 @@ def uploaded_file(filename): #inputs filename and runs it though model as a pand
     here = os.getcwd()
     image_path = os.path.join(here, app.config['UPLOAD_FOLDER'], filename)
     results = model(image_path, size=416)
+    
+    print(request.method)
+    if request.method == 'POST':
+        # check if the post request has the file part
+        if 'file' not in request.files:
+            flash('No file part')
+            return redirect(request.url)
+
+        file = request.files['file']
+        # if user does not select file, browser also
+        # submit an empty part without filename
+        if file.filename == '':
+            flash('No selected file')
+            return redirect(request.url)
+
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            
+            return redirect(url_for('uploaded_file',
+                                    filename=filename))
 
     if len(results.pandas().xyxy) > 0:
         results.print()
@@ -98,42 +121,22 @@ def uploaded_file(filename): #inputs filename and runs it though model as a pand
         labels = [emotion.capitalize() for emotion in labels]
         labels = and_syntax(labels)
 
-    print(request.method)
-    if request.method == 'POST':
-        # check if the post request has the file part
-        print(request.files)
-        if 'file' not in request.files:
-            flash('No file part')
-            return redirect(request.url)
 
-        file = request.files['file']
-        print(file)
-        # if user does not select file, browser also
-        # submit an empty part without filename
-        if file.filename == '':
-            flash('No selected file')
-            return redirect(request.url)
-
-        if file and allowed_file(file.filename):
-            filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            
-            return redirect(url_for('uploaded_file',
-                                    filename=filename))
 
         return render_template('results.html', confidences=format_confidences, labels=labels,
                                old_filename=filename,
                                filename=filename)
+
 
     else:
         found = False
         return render_template('results.html', labels='No Weapons', old_filename=filename, filename=filename)
 
 
-
 @app.route(f'{base_url}/uploads/<path:filename>')
 def files(filename):#takes file from model and sends as annotated image back to site
     return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True)
+
 
 # define additional routes here
 # for example:
